@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Seongmin Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **super-amazing** person."
+  bio              : "I am a **super-amazing** person."
   location         : "Sejong, Korea"
   email            :
   links:
