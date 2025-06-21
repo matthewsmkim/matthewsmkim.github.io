@@ -10,8 +10,8 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+theme                  : "minimal-mistakes-jekyll"
+# remote_theme           :  "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -22,7 +22,7 @@ subtitle                 : #
 name                     : "Seongmin Kim"
 description              : "An amazing website."
 url                      : "https://matthewsmkim.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : ""
 repository               : "github.com/matthewsmkim"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -276,6 +276,10 @@ compress_html:
   ignore:
     envs: development
 
+collections:
+  pages:
+    output: true
+    permalink: /:path/
 
 # Defaults
 defaults:
@@ -292,3 +296,11 @@ defaults:
       related: true
       sidebar:
           nav: "docs"
+
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true

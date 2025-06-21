@@ -1,20 +1,29 @@
-# main links
 main:
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
-
-docs:
-  - title: Menu
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  - title: "Menu"
     children:
       - title: "Java"
+        url: /java/
       - title: "Algorithm"
-      - title: "Spring" 
+        url: /algorithm/
+      - title: "Spring"
+        url: /spring/
       - title: "Computer Network"
+        url: /computer-network/
       - title: "Operating System"
+        url: /operating-system/
       - title: "Computer Architecture"
+        url: /computer-architecture/
+
+docs:
+  - title: "Java"
+    url: /java/
+  - title: "Spring"
+    url: /spring/

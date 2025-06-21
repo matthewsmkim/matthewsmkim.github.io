@@ -1,5 +1,10 @@
-{%- for post in site.categories[include.taxonomy] -%}
-  {%- unless post.hidden -%}
-    {% include archive-single.html %}
-  {%- endunless -%}
-{%- endfor -%}
+{% assign tax_value = page.category %}
+{% assign filtered = site.posts | where_exp: "post", "post.categories contains tax_value" %}
+
+{% if filtered.size > 0 %}
+  {% for post in filtered %}
+    {% include archive-single.html post=post %}
+  {% endfor %}
+{% else %}
+  <p>No posts found for category: {{ tax_value }}</p>
+{% endif %}

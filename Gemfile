@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gemspec
-gem "base64", require: false
-gem "bigdecimal"
-gem "kramdown-parser-gfm"
+
+gem "github-pages", group: :jekyll_plugins
+gem "minimal-mistakes-jekyll"
+gem "kramdown-parser-gfm" # ← 필요 시 유지
